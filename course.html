@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextEdTech | Course Player</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+
+<header class="navbar">
+  <h1>NextEdTech</h1>
+  <a href="dashboard.html">← Back to Dashboard</a>
+</header>
+
+<div class="course-container">
+
+  <div class="video-section">
+    <div class="video-wrapper">
+      <video id="videoPlayer" controls preload="metadata">
+        <source src="videos/intro.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+    </div>
+  </div>
+
+  <aside class="lesson-panel">
+    <h3>Course Lessons</h3>
+    <ul id="lessonList">
+      <li class="active" onclick="loadVideo('intro.mp4', this)">Introduction</li>
+      <li onclick="loadVideo('html.mp4', this)">HTML Basics</li>
+      <li onclick="loadVideo('css.mp4', this)">CSS Fundamentals</li>
+      <li onclick="loadVideo('js.mp4', this)">JavaScript Essentials</li>
+    </ul>
+  </aside>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextEdTech | Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+
+<header class="navbar">
+  <h1>NextEdTech</h1>
+  <nav>
+    <a href="index.html">Courses</a>
+    <a href="dashboard.html" class="active-link">Dashboard</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>My Learning Dashboard</h2>
+  <p>Track your course progress and continue learning</p>
+</section>
+
+<!-- PROGRESS OVERVIEW -->
+<section class="progress-overview">
+
+  <div class="progress-card overall">
+    <h3>Overall Progress</h3>
+    <div class="progress-circle">
+      <svg>
+        <circle cx="60" cy="60" r="54"></circle>
+        <circle cx="60" cy="60" r="54" id="overallProgress"></circle>
+      </svg>
+      <span id="overallPercent">0%</span>
+    </div>
+    <p>You're doing great! Keep learning 🚀</p>
+  </div>
+
+  <div class="progress-card activity enhanced">
+  <div class="activity-header">
+    <h3>Weekly Learning Activity</h3>
+    <span class="activity-sub">Last 7 days</span>
+  </div>
+
+  <div class="activity-chart">
+    <div class="bar" data-day="Mon" data-hours="1.5"><span></span></div>
+    <div class="bar" data-day="Tue" data-hours="2.5"><span></span></div>
+    <div class="bar" data-day="Wed" data-hours="2"><span></span></div>
+    <div class="bar" data-day="Thu" data-hours="3"><span></span></div>
+    <div class="bar" data-day="Fri" data-hours="1"><span></span></div>
+    <div class="bar" data-day="Sat" data-hours="4"><span></span></div>
+    <div class="bar" data-day="Sun" data-hours="2.5"><span></span></div>
+  </div>
+
+  <div class="activity-footer">
+    <div>
+      <strong>16.5 hrs</strong>
+      <span>Total this week</span>
+    </div>
+    <div>
+      <strong>4-day</strong>
+      <span>Learning streak</span>
+    </div>
+  </div>
+</div>
+
+
+</section>
+
+
+<section class="course-list dashboard-list">
+  <!-- JS will populate dashboard cards -->
+</section>
+
+<footer class="footer">
+  <p class="footer-bottom">© 2026 NextEdTech. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

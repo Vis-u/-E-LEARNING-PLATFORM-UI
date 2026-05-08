@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextEdTech | Profile</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+
+<header class="navbar">
+  <h1>NextEdTech</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="profile.html" class="active-link">Profile</a>
+  </nav>
+</header>
+
+<!-- PROFILE COVER -->
+<section class="profile-cover">
+  <div class="cover-overlay"></div>
+  <div class="profile-cover-content">
+    <img id="profileAvatar" src="https://i.pravatar.cc/150?img=12" alt="Avatar" class="avatar">
+    <div class="profile-info">
+      <h2 id="profileName">Vishal Yadav</h2>
+      <p id="profileRole">Frontend Developer Learner</p>
+      <div class="profile-badges">
+        <span class="badge">Pro Member</span>
+        <span class="badge">6 Courses</span>
+        <span class="badge">2 Certificates</span>
+      </div>
+    </div>
+    <label class="upload-btn">
+      Change Photo
+      <input type="file" accept="image/*" hidden onchange="updateAvatar(event)">
+    </label>
+  </div>
+</section>
+
+<!-- PROFILE BODY -->
+<section class="profile-body">
+
+  <!-- LEFT SIDE: TABS -->
+  <aside class="profile-sidebar">
+    <button class="tab active" onclick="openTab('overview')">Overview</button>
+    <button class="tab" onclick="openTab('settings')">Settings</button>
+    <button class="tab" onclick="openTab('security')">Security</button>
+  </aside>
+
+  <!-- RIGHT SIDE: TAB CONTENT -->
+  <div class="profile-content">
+
+    <!-- OVERVIEW -->
+    <div id="overview" class="tab-content active">
+      <h3>Learning Progress</h3>
+
+      <div class="progress-grid">
+        <div class="stat-card">
+          <h4>Completed</h4>
+          <p class="stat-number">2</p>
+          <p class="stat-desc">Courses completed successfully</p>
+        </div>
+        <div class="stat-card">
+          <h4>In Progress</h4>
+          <p class="stat-number">3</p>
+          <p class="stat-desc">Courses you're currently learning</p>
+        </div>
+        <div class="stat-card">
+          <h4>Hours Learned</h4>
+          <p class="stat-number">42</p>
+          <p class="stat-desc">Total learning hours</p>
+        </div>
+      </div>
+
+      <div class="progress-bar-card">
+        <h4>Overall Progress</h4>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 62%;"></div>
+        </div>
+        <p class="progress-label">62% complete • Keep going!</p>
+      </div>
+    </div>
+
+    <!-- SETTINGS -->
+    <div id="settings" class="tab-content">
+      <h3>Account Settings</h3>
+
+      <div class="form-grid">
+        <div>
+          <label>Full Name</label>
+          <input id="inputName" type="text" value="Ankit Yadav">
+        </div>
+        <div>
+          <label>Email</label>
+          <input id="inputEmail" type="email" value="ankit@example.com">
+        </div>
+        <div>
+          <label>Role</label>
+          <input id="inputRole" type="text" value="Frontend Developer">
+        </div>
+        <div>
+          <label>Location</label>
+          <input id="inputLocation" type="text" value="India">
+        </div>
+      </div>
+
+      <button class="save-btn" onclick="saveProfile()">Save Changes</button>
+    </div>
+
+    <!-- SECURITY -->
+    <div id="security" class="tab-content">
+      <h3>Security</h3>
+
+      <div class="settings">
+        <label>
+          <input type="checkbox" checked>
+          Email Notifications
+        </label>
+        <label>
+          <input type="checkbox">
+          Two-Factor Authentication
+        </label>
+        <label>
+          <input type="checkbox">
+          Login Alerts
+        </label>
+      </div>
+
+      <button class="save-btn" onclick="showToast('Security settings updated!')">Update Security</button>
+    </div>
+
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p class="footer-bottom">© 2026 NextEdTech. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
