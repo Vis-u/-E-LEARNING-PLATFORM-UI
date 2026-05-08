@@ -43,8 +43,12 @@ Clean layout with reusable components and consistent styling
 
 # OUTPUT
 
+HOME UI
 <img width="1034" height="491" alt="Image" src="https://github.com/user-attachments/assets/4e66ba00-f11e-4497-be63-d44a8e560be7" />
 <img width="1056" height="500" alt="Image" src="https://github.com/user-attachments/assets/2e46e7d0-c295-4971-ba45-2b16d3e5144d" />
+
+DASHBOARD
 <img width="1037" height="504" alt="Image" src="https://github.com/user-attachments/assets/66b2bf3b-c509-4f3b-b895-cc548c7a4871" />
 
+PROFILE
 <img width="1860" height="815" alt="Image" src="https://github.com/user-attachments/assets/94558504-5c75-4c8f-94c8-2eb5b1efe9f4" />
